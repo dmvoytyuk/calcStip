@@ -13,7 +13,7 @@ const sunD = {
 basePay = 10.76;
 
 function readValues(callback) {
-    const basePay = document.getElementById('basepay');
+    const basePay = document.getElementById('basepay').textContent;
     console.log(basePay);
 }
 
