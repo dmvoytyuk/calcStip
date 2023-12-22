@@ -12,6 +12,11 @@ const sunD = {
 
 basePay = 10.76;
 
+function readValues() {
+    const basePay = document.getElementById('basepay');
+    
+}
+
 function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, sunEvenings) {
     
     // const totalWorkDayH = workNight * 2 + workDay * 8 + workEvening * 4;
