@@ -20,3 +20,7 @@ ol {
 address {
   font-style: normal;
 }
+
+input {
+    display: block;
+}
