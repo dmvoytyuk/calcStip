@@ -47,7 +47,7 @@ button.addEventListener('click', () => {
     const sunEvenings = Number.parseFloat(document.getElementById('sunevening').value.replace(',','.'));
     const totalPay = calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, sunEvenings)
 
-    alert(`Prenderesti ${totalPay} euro lordi in piu'`);
+    alert(`Prenderesti ${totalPay} euro lordi in piu' (netto ${totalPay * 0.22} all 22%)`);
 });
 
 
