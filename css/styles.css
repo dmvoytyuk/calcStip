@@ -26,3 +26,7 @@ address {
     display: flex;
     flex-direction: column;
 }
+
+.data-in {
+    margin-bottom: 5px;
+}
