@@ -37,7 +37,7 @@ function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, 
 
 const button = document.getElementById('calc');
 button.addEventListener('click', () => {
-    const basePay = document.getElementById('basepay').value;
+    const basePay = Number.parseFloat(document.getElementById('basepay').value);
     console.log(basePay);
 });
 
