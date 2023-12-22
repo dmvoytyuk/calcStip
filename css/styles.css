@@ -24,3 +24,8 @@ address {
 input {
     display: block;
 }
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
