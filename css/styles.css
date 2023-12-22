@@ -21,10 +21,6 @@ address {
   font-style: normal;
 }
 
-input {
-    display: block;
-}
-
 .data {
     display: flex;
     flex-direction: column;
