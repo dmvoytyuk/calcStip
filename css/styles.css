@@ -31,3 +31,7 @@ address {
 .data-in {
     margin-bottom: 20px;
 }
+
+.form-labels {
+    text-align: center;
+}
