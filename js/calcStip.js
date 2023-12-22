@@ -20,7 +20,7 @@ function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, 
     console.log(`ore lavorate giorni feriali la sera ${totalWorkEveningH}`);
     console.log(`ore lavorate giorni feriali la notte ${totalWorkNightH}`);
 
-    const totalSunDayH = sunDays * 8 + sunEvenings * 6;
+    const totalSunDayH = sunDays * 8 + sunEvenings * 6 + sunNights * 2;
     const totalSunNightH = sunEvenings * 2 + sunNights * 6;
     console.log(`ore lavorate giorni festivi ${totalSunDayH}`);
     console.log(`ore lavorate giorni festivi note ${totalSunNightH}`);
