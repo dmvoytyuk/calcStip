@@ -22,9 +22,10 @@ address {
 }
 
 .data {
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
+    padding: 50px;
 }
 
 .data-in {
