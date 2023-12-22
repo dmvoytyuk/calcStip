@@ -12,11 +12,6 @@ const sunD = {
 
 basePay = 10.76;
 
-function readValues(callback) {
-    const basePay = document.getElementById('basepay').textContent;
-    console.log(basePay);
-}
-
 function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, sunEvenings) {
     
     // const totalWorkDayH = workNight * 2 + workDay * 8 + workEvening * 4;
@@ -41,7 +36,10 @@ function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, 
 }
 
 const button = document.getElementById('calc');
-button.addEventListener('click', readValues());
+button.addEventListener('click', () => {
+    const basePay = document.getElementById('basepay').textContent;
+    console.log(basePay);
+});
 
 console.log(calcStip(basePay, workD.nights, workD.days, workD.evenings, sunD.nights, sunD.days, sunD.evenings));
 
