@@ -1,16 +1,16 @@
-const workD = {
-    nights: 6,
-    days: 1,
-    evenings: 6,
-}
+// const workD = {
+//     nights: 6,
+//     days: 1,
+//     evenings: 6,
+// }
 
-const sunD = {
-    nights: 1,
-    days: 1,
-    evenings: 1,
-}
+// const sunD = {
+//     nights: 1,
+//     days: 1,
+//     evenings: 1,
+// }
 
-basePay = 10.76;
+// basePay = 10.76;
 
 function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, sunEvenings) {
     
@@ -36,14 +36,18 @@ function calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, 
 }
 
 const button = document.getElementById('calc');
-button.addEventListener('click', () => {
-    let basePayStr = document.getElementById('basepay').value;
-    basePayStr = basePayStr.replace(',','.');
-    console.log(basePayStr);
-    const basePay = Number.parseFloat();
-    console.log(basePay);
-});
 
-console.log(calcStip(basePay, workD.nights, workD.days, workD.evenings, sunD.nights, sunD.days, sunD.evenings));
+button.addEventListener('click', () => {
+    const basePay = Number.parseFloat(document.getElementById('basepay').value.replace(',','.'));
+    const workNight = Number.parseFloat(document.getElementById('worknight').value.replace(',','.'));
+    const workDay = Number.parseFloat(document.getElementById('workday').value.replace(',','.'));
+    const workEvening = Number.parseFloat(document.getElementById('workevening').value.replace(',','.'));
+    const sunNights = Number.parseFloat(document.getElementById('sunnight').value.replace(',','.'));
+    const sunDays = Number.parseFloat(document.getElementById('sunday').value.replace(',','.'));
+    const sunEvenings = Number.parseFloat(document.getElementById('sunevening').value.replace(',','.'));
+    const totalPay = calcStip(basePay, workNight, workDay, workEvening, sunNights, sunDays, sunEvenings)
+
+    alert(`Prenderesti ${totalPay} euro lordi in piu'`);
+});
 
 
