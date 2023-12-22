@@ -22,11 +22,11 @@ address {
 }
 
 .data {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
 }
 
 .data-in {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
